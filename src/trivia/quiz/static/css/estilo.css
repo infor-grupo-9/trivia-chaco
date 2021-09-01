@@ -255,28 +255,89 @@
     margin-top: 100px;
 }
 .flex-us{
-    width: 50%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 .flex-us h1{
-    margin-left: 170px;
+    margin-top: 40px;
+
 }
 .flex__img{
+    margin-top: 40px;
+    margin-bottom: 40px;
     justify-content: center;
     text-align: center;
-    width: 50%;
-    margin-left: 150px;
+    
+    
 }
 .flex__img img{
     
     margin: 40px;
-    margin-bottom: 40px;
+    width: 15%;
     border-radius: 100%;
     filter: grayscale(100%);
     box-shadow: 1px 1px 20px  #172623,
     -1px -1px 10px  #172623; ;    
 }
 
+.flex__img b{
+    font-weight: 500;
+    
+}
 
-.flex__5 b{
-    margin-bottom: 40px;
+
+/* Init Page */
+
+.flex-iniciar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items:flex-start;
+    height: 90vh;
+    margin-top: 100px;
+    background: #f4e9cd;
+}
+.flex__juego{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.flex__juego h1{  
+    margin-left: 20px;
+}
+.flex__juego h2{    
+    margin: 20px;
+}
+.flex__juego button{
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    align-items: center;
+    align-items: flex-end;
+    margin-left: 20px;
+    border: none;   
+    font-family: "Montserrat";
+    font-weight: 500;
+    width: 400px;
+    height: 50px;
+    background-color: #084887;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+.flex__juego button:hover{
+    width: 400px;
+    height: 100px;
+    background-color: #000;
+    transition: 1s;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+.flex__juego a{
+    color: #fff;
+    text-decoration: none;
 }
