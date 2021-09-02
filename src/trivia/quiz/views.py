@@ -44,7 +44,7 @@ def responder(request, id_pregunta):
     pregunta = get_object_or_404(Pregunta, pk = id_pregunta)
 
     if pregunta.orden >= 5:
-        return HttpResponseRedirect(reverse('quiz:ruta_resultado'))
+        return HttpResponseRedirect(reverse('quiz:ruta_iniciar'))
     else:
         siguiente = pregunta.orden + 1
         return HttpResponseRedirect(reverse('quiz:ruta_pregunta', args=(siguiente,)))
@@ -58,10 +58,6 @@ def mostrar_resultado(request):
 @login_required(login_url='/quiz/login/')
 def contact(request):
     return render (request, 'quiz/contact.html')
-
-@login_required(login_url='/quiz/login/')
-def jugar(request):
-    return render (request, 'juego.html', {})
 
 
 @login_required(login_url='/quiz/login/')

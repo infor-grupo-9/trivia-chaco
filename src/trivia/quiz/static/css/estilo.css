@@ -35,9 +35,20 @@
 
     width: 100%;
     padding: 20px;
+    margin-left: 10px;
 }
+
+.div__section h1{
+    color: #fff;
+    margin-left: 12px;
+    
+    display: block;
+    width: 400px;
+}
+
 .div__section h2{
     color: #fff;
+    margin-left: 12px;
     
     display: block;
     width: 400px;
@@ -340,4 +351,58 @@
 .flex__juego a{
     color: #fff;
     text-decoration: none;
+}
+
+
+
+/* The game page */
+
+.flex-game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    margin-top: 100px;
+    background: #f4e9cd;
+}
+.flex-game__form{
+    flex: 1;
+
+}
+.flex-game__div{
+    margin: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-game__div h2{
+    font-size: 30px;
+    margin: 20px;
+}
+.flex-game__checkbox{
+    font-size: 20px;
+    align-items: flex-end;
+}
+
+.flex-game__button{
+    display: inline;
+    color: #fff;
+    font-size: 20px;
+    margin: 40px;
+    margin-left: 450px;
+    border: none;   
+    font-family: "Montserrat";
+    font-weight: 500;
+    width: 400px;
+    height: 50px;
+    background-color: #084887;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+.flex-game__button:hover{
+    transition: 2s;
+    background-color: #000;
+    cursor: pointer;
 }
