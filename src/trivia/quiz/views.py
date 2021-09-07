@@ -58,8 +58,9 @@ def responder(request, id_pregunta):
 
     respuesta.save()
 
+    
 
-    if pregunta.orden >= 5:
+    if pregunta.orden >= 10:
         return redirect(reverse('quiz:ruta_resultado'))
     else:
         siguiente = pregunta.orden + 1
